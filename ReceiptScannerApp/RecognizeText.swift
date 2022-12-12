@@ -10,7 +10,7 @@ import Vision
 
 var twt = ""
 
-func recogn(_ image : UIImage) -> String {
+func recogn(_ image : UIImage) {
     
     if let cgImage = image.cgImage {
         let requestHandler = VNImageRequestHandler(cgImage: cgImage)
@@ -41,9 +41,8 @@ func recogn(_ image : UIImage) -> String {
             do {
                 try requestHandler.perform([recognizeTextRequest])
             } catch {
-                fatalError("runtime error")
+                fatalError("runtime error") //should we have runtime error?
             }
         }
     }
-    return twt
 }

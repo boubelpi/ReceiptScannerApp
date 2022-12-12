@@ -16,25 +16,25 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: PhotoOfReceiptView(im: selectedImage).navigationBarBackButtonHidden(true), tag : "T", selection: $select) {
+                Button {
+                    if (selectedImage != nil) {select = "T"}
                 }
-                .navigationBarBackButtonHidden(true)
-            Button("Take new photo") {
+            label: {
+                Text("Add a receipt. After doing that, press this button").bold()
+            }
+                NavigationLink(destination: PhotoOfReceiptView(im : selectedImage).navigationBarBackButtonHidden(true), tag : "T", selection: $select) {}
+                Button("Take new photo") {
                     self.sourceType = .camera
                     self.isImagePickerDisplay.toggle()
-                if (selectedImage != nil) { select = "T"}
                 }.padding()
-                    .navigationBarBackButtonHidden(true)
                 
                 Button("Select from library of photos") {
                     self.sourceType = .photoLibrary
                     self.isImagePickerDisplay.toggle()
-                    if (selectedImage != nil) { select = "T"
-                    }
-                }.padding()
             }
-            .sheet(isPresented: self.$isImagePickerDisplay) {
-                ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
+                .sheet(isPresented: self.$isImagePickerDisplay) {
+                    ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.$sourceType)
+                }
             }
         }
     }

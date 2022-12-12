@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ReceiptsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Your total for receipts is \(total_sum)")
+            List(ar) {i in
+                Text(String(i.cost) + i.currency)
+            }
+        }
     }
 }
 

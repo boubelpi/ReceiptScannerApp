@@ -7,7 +7,12 @@
 
 import Foundation
 
-class Receipt {
-    let cost : Double = 0.0
-    let currency : String = ""
+class Receipt : Identifiable{
+    var cost : Double = 0.0
+    var currency : String = ""
+    let id = UUID()
+    init(cost: Double, currency: String) {
+        self.cost = cost
+        self.currency = currency
+    }
 }

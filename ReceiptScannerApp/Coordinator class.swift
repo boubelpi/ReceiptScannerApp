@@ -13,7 +13,7 @@ class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerContro
     init(picker : ImagePickerView) {
         self.picker = picker
     }
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+   @IBAction func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let selectedImage = info[.originalImage] as? UIImage else {return}
         self.picker.selectedImage = selectedImage
         self.picker.isPresented.wrappedValue.dismiss()
