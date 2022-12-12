@@ -8,16 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    @State private var selectedImage: UIImage?
+    @State private var isImagePickerDisplay = false
+    @State private var select : String? = nil
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                NavigationLink(destination: PhotoOfReceiptView(im: selectedImage).navigationBarBackButtonHidden(true), tag : "T", selection: $select) {
+                }
+                .navigationBarBackButtonHidden(true)
+            Button("Take new photo") {
+                    self.sourceType = .camera
+                    self.isImagePickerDisplay.toggle()
+                if (selectedImage != nil) { select = "T"}
+                }.padding()
+                    .navigationBarBackButtonHidden(true)
+                
+                Button("Select from library of photos") {
+                    self.sourceType = .photoLibrary
+                    self.isImagePickerDisplay.toggle()
+                    if (selectedImage != nil) { select = "T"
+                    }
+                }.padding()
+            }
+            .sheet(isPresented: self.$isImagePickerDisplay) {
+                ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
+            }
         }
-        .padding()
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

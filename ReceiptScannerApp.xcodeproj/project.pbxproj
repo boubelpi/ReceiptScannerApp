@@ -11,6 +11,13 @@
 		E91919C4294429E1001DF420 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919C3294429E1001DF420 /* ContentView.swift */; };
 		E91919C6294429E2001DF420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91919C5294429E2001DF420 /* Assets.xcassets */; };
 		E91919C9294429E2001DF420 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91919C8294429E2001DF420 /* Preview Assets.xcassets */; };
+		E91919D129442FF2001DF420 /* Coordinator class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919D029442FF2001DF420 /* Coordinator class.swift */; };
+		E91919D329443038001DF420 /* ImagePicker class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919D229443038001DF420 /* ImagePicker class.swift */; };
+		E91919D729456FAF001DF420 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919D629456FAF001DF420 /* StartView.swift */; };
+		E91919DB29457119001DF420 /* ReceiptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919DA29457119001DF420 /* ReceiptsView.swift */; };
+		E91919DD294572E7001DF420 /* ReceiptClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919DC294572E7001DF420 /* ReceiptClass.swift */; };
+		E91919DF2946A7CA001DF420 /* PhotoOfReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919DE2946A7CA001DF420 /* PhotoOfReceiptView.swift */; };
+		E91919E12946BD91001DF420 /* RecognizeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919E02946BD91001DF420 /* RecognizeText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		E91919C3294429E1001DF420 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E91919C5294429E2001DF420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91919C8294429E2001DF420 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E91919CF29442EB5001DF420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E91919D029442FF2001DF420 /* Coordinator class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator class.swift"; sourceTree = "<group>"; };
+		E91919D229443038001DF420 /* ImagePicker class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePicker class.swift"; sourceTree = "<group>"; };
+		E91919D629456FAF001DF420 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		E91919DA29457119001DF420 /* ReceiptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsView.swift; sourceTree = "<group>"; };
+		E91919DC294572E7001DF420 /* ReceiptClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptClass.swift; sourceTree = "<group>"; };
+		E91919DE2946A7CA001DF420 /* PhotoOfReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfReceiptView.swift; sourceTree = "<group>"; };
+		E91919E02946BD91001DF420 /* RecognizeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +66,17 @@
 		E91919C0294429E1001DF420 /* ReceiptScannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				E91919CF29442EB5001DF420 /* Info.plist */,
 				E91919C1294429E1001DF420 /* ReceiptScannerAppApp.swift */,
 				E91919C3294429E1001DF420 /* ContentView.swift */,
 				E91919C5294429E2001DF420 /* Assets.xcassets */,
+				E91919D029442FF2001DF420 /* Coordinator class.swift */,
+				E91919D229443038001DF420 /* ImagePicker class.swift */,
+				E91919D629456FAF001DF420 /* StartView.swift */,
+				E91919DA29457119001DF420 /* ReceiptsView.swift */,
+				E91919DC294572E7001DF420 /* ReceiptClass.swift */,
+				E91919DE2946A7CA001DF420 /* PhotoOfReceiptView.swift */,
+				E91919E02946BD91001DF420 /* RecognizeText.swift */,
 				E91919C7294429E2001DF420 /* Preview Content */,
 			);
 			path = ReceiptScannerApp;
@@ -137,8 +160,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91919E12946BD91001DF420 /* RecognizeText.swift in Sources */,
 				E91919C4294429E1001DF420 /* ContentView.swift in Sources */,
+				E91919DF2946A7CA001DF420 /* PhotoOfReceiptView.swift in Sources */,
+				E91919DB29457119001DF420 /* ReceiptsView.swift in Sources */,
+				E91919D729456FAF001DF420 /* StartView.swift in Sources */,
+				E91919DD294572E7001DF420 /* ReceiptClass.swift in Sources */,
+				E91919D329443038001DF420 /* ImagePicker class.swift in Sources */,
 				E91919C2294429E1001DF420 /* ReceiptScannerAppApp.swift in Sources */,
+				E91919D129442FF2001DF420 /* Coordinator class.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +300,8 @@
 				DEVELOPMENT_TEAM = 2QNR8437M4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceiptScannerApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +331,8 @@
 				DEVELOPMENT_TEAM = 2QNR8437M4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceiptScannerApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
