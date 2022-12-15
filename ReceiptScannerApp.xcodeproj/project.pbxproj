@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655F7E66294B673300B7C2D2 /* get_total.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F7E65294B673300B7C2D2 /* get_total.swift */; };
 		E91919C2294429E1001DF420 /* ReceiptScannerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919C1294429E1001DF420 /* ReceiptScannerAppApp.swift */; };
 		E91919C4294429E1001DF420 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91919C3294429E1001DF420 /* ContentView.swift */; };
 		E91919C6294429E2001DF420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91919C5294429E2001DF420 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		655F7E65294B673300B7C2D2 /* get_total.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = get_total.swift; sourceTree = "<group>"; };
 		E91919BE294429E1001DF420 /* ReceiptScannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptScannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91919C1294429E1001DF420 /* ReceiptScannerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerAppApp.swift; sourceTree = "<group>"; };
 		E91919C3294429E1001DF420 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				E91919DE2946A7CA001DF420 /* PhotoOfReceiptView.swift */,
 				E91919E02946BD91001DF420 /* RecognizeText.swift */,
 				E91919E429477D4D001DF420 /* InformationAboutAddedReceipts.swift */,
+				655F7E65294B673300B7C2D2 /* get_total.swift */,
 				E91919C7294429E2001DF420 /* Preview Content */,
 			);
 			path = ReceiptScannerApp;
@@ -169,6 +172,7 @@
 				E91919DB29457119001DF420 /* ReceiptsView.swift in Sources */,
 				E91919E529477D4E001DF420 /* InformationAboutAddedReceipts.swift in Sources */,
 				E91919D729456FAF001DF420 /* StartView.swift in Sources */,
+				655F7E66294B673300B7C2D2 /* get_total.swift in Sources */,
 				E91919DD294572E7001DF420 /* ReceiptClass.swift in Sources */,
 				E91919D329443038001DF420 /* ImagePicker class.swift in Sources */,
 				E91919C2294429E1001DF420 /* ReceiptScannerAppApp.swift in Sources */,

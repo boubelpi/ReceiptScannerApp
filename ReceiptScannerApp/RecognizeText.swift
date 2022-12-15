@@ -46,3 +46,9 @@ func recogn(_ image : UIImage) {
         }
     }
 }
+func return_twt(_ im : UIImage?) -> String {
+    recogn(im!)
+    let totale = get_total(twt)
+    if (totale == nil) {return ""}
+    else {return String(totale!)}
+}
