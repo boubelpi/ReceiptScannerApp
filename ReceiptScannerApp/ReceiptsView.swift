@@ -10,7 +10,7 @@ import SwiftUI
 struct ReceiptsView: View {
     var body: some View {
         VStack {
-            Text("Your total for receipts is \(total_sum)")
+            Text("Your total for receipts is \(total_sum)$")
             List(ar) {i in
                 Text(String(i.cost) + i.currency)
             }
