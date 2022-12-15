@@ -36,7 +36,6 @@ struct PhotoOfReceiptView: View {
                     .frame(width:300,height:500)
                 Text("Totale : \(return_twt(im!))")
                 Button("Add to the list of receipts") {
-                    twt = ""
                     if (receipt == nil) {return}
                     let m1 = receipt!
                     let m2 = "$"

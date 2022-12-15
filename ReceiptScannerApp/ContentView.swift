@@ -24,11 +24,13 @@ struct ContentView: View {
             }
                 NavigationLink(destination: PhotoOfReceiptView(im : selectedImage).navigationBarBackButtonHidden(true), tag : "T", selection: $select) {}
                 Button("Take new photo") {
+                    twt = ""
                     self.sourceType = .camera
                     self.isImagePickerDisplay.toggle()
                 }.padding()
                 
                 Button("Select from library of photos") {
+                    twt = ""
                     self.sourceType = .photoLibrary
                     self.isImagePickerDisplay.toggle()
             }
